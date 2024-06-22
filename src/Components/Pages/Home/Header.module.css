@@ -1,0 +1,43 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 150px;
+  background-color: #131110;
+  width: 100%;
+  height: 100vh;
+}
+
+.boxL {
+  margin-top: 100px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 450px;
+}
+
+.boxL h1 {
+  font-size: 60px;
+  margin: 0;
+}
+
+.boxL p {
+  color: #696667;
+  line-height: 25px;
+  letter-spacing: 0.5px;
+  font-size: 15px;
+  margin: 10px 0px;
+}
+
+.numberBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.numberIconPBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

@@ -1,0 +1,74 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+    height: fit-content;
+    width: 400px;
+    padding: 25px 50px;
+    gap: 20px;
+    color: black;
+  }
+  
+  .logoTitleBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 15px;
+  }
+  
+  .inputBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+  }
+  
+  .inputBox input {
+    height: 50px;
+    width: 100%;
+    padding: 0 20px;
+  }
+  
+  .inputBox input:focus {
+    outline: none;
+  }
+  
+  .errorInput {
+    height: 50px;
+    width: 100%;
+    padding: 0 20px;
+    border: 2px solid red;
+  }
+  
+  .errorText {
+    margin: 0;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .container button {
+    background-color: #2c4dcd;
+    border: none;
+    border-radius: 5px;
+    padding: 18px 20px;
+    width: 100%;
+    color: white;
+    letter-spacing: 0.5px;
+    font-size: 15px;
+    cursor: pointer;
+  }
+  
+  .span {
+    cursor: pointer;
+  }
+  
+  .span:hover {
+    color: #2c4dcd;
+  }
+  
+  .logo {
+    height: 100px;
+  }

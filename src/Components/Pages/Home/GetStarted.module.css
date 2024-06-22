@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 150px;
+  height: fit-content;
+  padding: 50px 165px;
+}
+
+.wrapper {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #4161df;
+  width: 100%;
+  border: 5px solid #5d77d6;
+  border-radius: 10px;
+  gap: 15px;
+}
+
+.container button {
+  background-color: #5a73d7;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 12px 25px;
+  cursor: pointer;
+}
+
+.container p {
+  color: #b1bef2;
+}

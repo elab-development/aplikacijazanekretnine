@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 150px;
+  height: fit-content;
+  padding: 50px 100px;
+}
+
+.boxL {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 600px;
+}
+
+.boxL h2 {
+  color: #ffa563;
+}
+
+.boxL h1 {
+  color: #1f3e72;
+}
+
+.boxL p {
+  color: #8c8b8b;
+}
+
+.contactContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}

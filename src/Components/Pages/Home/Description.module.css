@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 150px;
+  height: fit-content;
+  padding: 50px 100px;
+}
+
+.boxR {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 600px;
+}
+
+.boxR h2 {
+  color: #ffa563;
+}
+
+.boxR h1 {
+  color: #1f3e72;
+}
+
+.boxR p {
+  color: #8c8b8b;
+}

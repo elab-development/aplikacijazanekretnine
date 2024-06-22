@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 150px;
+  height: fit-content;
+  padding: 0px 165px;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border-top: 1px solid #bfbebe;
+  padding: 20px 10px;
+}
+
+.container p {
+  color: #8c9abc;
+}
+
+.container h1 {
+  color: #1f3e72;
+  font-weight: 700;
+}
+
+.container h3 {
+  color: #1f3e72;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.linkBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.logo {
+  cursor: pointer;
+}

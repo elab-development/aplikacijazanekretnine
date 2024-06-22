@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  overflow-x: hidden;
+  letter-spacing: 0.3px;
+  color: white;
+}
+
+h1 {
+  margin: 0;
+}
+
+p {
+  font-size: 15px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #1b1c21;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}

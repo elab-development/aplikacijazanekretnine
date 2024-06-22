@@ -1,0 +1,7 @@
+.boxR {
+  margin-top: 65px;
+  border: 10px solid #302e2d;
+  border-radius: 250px 250px 0px 0px;
+  width: 450px;
+  height: 500px;
+}
