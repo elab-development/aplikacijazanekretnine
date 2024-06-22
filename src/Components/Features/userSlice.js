@@ -1,11 +1,22 @@
-* {
-    box-sizing: border-box;
-  }
-  
-  .App {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-  }
+import { createSlice } from "@reduxjs/toolkit";
+
+const initialState = {
+  user: null,
+  isLoading: false,
+};
+
+export const userSlice = createSlice({
+  name: "user",
+  initialState,
+  reducers: {
+    login: (state, action) => {
+      state.user = action.payload;
+    },
+    logout: (state) => {
+      state.user = null;
+    },
+  },
+});
+
+export default userSlice.reducer;
+export const { login, logout } = userSlice.actions;
