@@ -6,6 +6,11 @@
   align-items: center;
   justify-content: space-between;
   background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+
+.containerScrolling {
+  background-color: #131110;
 }
 
 .menuBox {
