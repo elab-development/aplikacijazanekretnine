@@ -87,7 +87,7 @@ const Form = () => {
             required
             name="user_name"
             type="text"
-            placeholder="Ime"
+            placeholder="Fistname"
             className={styles.input}
             value={name}
             onChange={(e) => setName(capitalizeFirstLetter(e.target.value))}
@@ -97,7 +97,7 @@ const Form = () => {
             required
             name="user_lastname"
             type="text"
-            placeholder="Prezime"
+            placeholder="Lastname"
             className={styles.input}
             value={lastname}
             onChange={(e) => setLastname(capitalizeFirstLetter(e.target.value))}
@@ -106,7 +106,7 @@ const Form = () => {
           <textarea
             required
             name="message"
-            placeholder="Poruka"
+            placeholder="Message"
             className={styles.textarea}
             cols="60"
             rows="10"

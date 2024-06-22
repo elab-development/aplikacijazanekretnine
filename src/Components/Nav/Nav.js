@@ -42,7 +42,9 @@ const Nav = () => {
         <Link style={{ textDecoration: "none" }} to={"/contact"}>
           <h2>Contact</h2>
         </Link>
-        <button>Login</button>
+          <Link to={"/auth"}>
+            <button>Login</button>
+          </Link>
       </div>
     </div>
   );
