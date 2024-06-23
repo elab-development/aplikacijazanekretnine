@@ -45,8 +45,6 @@ const Login = ({ setToggleRegistration }) => {
       if (err.code === "auth/invalid-credential") {
         setUserCredentialError(true);
       }
-
-      console.log(err);
     }
   };
 

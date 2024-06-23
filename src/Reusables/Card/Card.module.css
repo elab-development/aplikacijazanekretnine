@@ -1,4 +1,5 @@
 .container {
+    position: relative;
     display: flex;
     flex-direction: column;
     width: 280px;
@@ -10,4 +11,20 @@
   .container img {
     width: 100%;
     height: 200px;
+  }
+  .icon {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    height: 25px;
+    color: #2c4dcd;
+    transition: 0.3s ease;
+  }
+  
+  .icon:hover {
+    color: red;
+  }
+  
+  .favorited {
+    color: red;
   }

@@ -1,0 +1,15 @@
+.container {
+    height: fit-content;
+    background-color: #131110;
+    padding: 200px 100px;
+  }
+  
+  .container h2 {
+    margin-bottom: 50px;
+  }
+  
+  .cardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }

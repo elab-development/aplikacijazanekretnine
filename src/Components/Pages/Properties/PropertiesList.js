@@ -8,7 +8,7 @@ import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 const PropertiesList = () => {
   const [searchQuery, setSearchQuery] = useState("");
 
-  // Filter the data based on the search query
+
   const filteredData = listData.filter((item) => {
     const title = item.title ? item.title.toLowerCase() : "";
     const city = item.city ? item.city.toLowerCase() : "";
