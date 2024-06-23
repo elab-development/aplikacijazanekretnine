@@ -15,12 +15,10 @@ const ContactInformation = () => {
     <div className={styles.container}>
       <div className={styles.boxL}>
         <div className={styles.titleBox}>
-          <h2>Our Contacts</h2>
-          <h1>Easy to contact us</h1>
-          <p>
-            We always ready to help by providijng the best services for you. We
-            beleive a good blace to live can make your life better
-          </p>
+          <h2>Naš Kontakt</h2>
+          <h1>Lako nas je kontaktirati</h1>
+          Uvek smo spremni da vam pomognemo pružanjem najboljih usluga za vas.
+          Verujemo da dobro mesto za život može unaprediti vaš život.
         </div>
         <div className={styles.contactContainer}>
           <ContactBox icon={faPhone} title={"Call"} buttonTitle={"Call now"} />

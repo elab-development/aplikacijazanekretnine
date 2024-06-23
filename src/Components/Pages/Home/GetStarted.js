@@ -1,16 +1,18 @@
 import React from "react";
 import styles from "./GetStarted.module.css";
-
+import { Link } from "react-router-dom";
 const GetStarted = () => {
   return (
     <div className={styles.container}>
       <div className={styles.wrapper}>
-        <h1>Get Started With Homyz</h1>
+        <h1>Započnite sa Homyzom</h1>
         <p>
-          Subscribe and find super attractive price quotes from us. Find your
-          residence soon
+        Pretplatite se i pronađite vrlo atraktivne ponude cena kod nas.
+        Pronađite svoj dom uskoro.
         </p>
-        <button>Get Started</button>
+        <Link to={"/contact"}>
+          <button>Započnite</button>
+        </Link>
       </div>
     </div>
   );

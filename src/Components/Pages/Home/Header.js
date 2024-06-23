@@ -8,13 +8,13 @@ const Header = () => {
     <div className={styles.container}>
       <div className={styles.boxL}>
         <div>
-          <h1>Discover </h1>
-          <h1>Most Suitable </h1>
-          <h1>Property</h1>
+          <h1>Otkrijte </h1>
+          <h1>Pravo Mesto </h1>
+          <h1>Za Vas</h1>
         </div>
         <p>
-          Find a variety of properties that suit you very easilty Forget all
-          difficulties in finding a residence for you
+          Pronadjite različite apartmane koje Vam odgovaraju. Zaboravite sve
+          poteškoće u pronalaženju stana za Vas.
         </p>
         <div className={styles.numberBox}>
           <div className={styles.numberIconPBox}>
@@ -24,7 +24,7 @@ const Header = () => {
                 +
               </span>
             </p>
-            <p>Premium Products</p>
+            <p>Proizvoda</p>
           </div>
           <div className={styles.numberIconPBox}>
             <p style={{ color: "white", fontSize: "35px" }}>
@@ -33,7 +33,7 @@ const Header = () => {
                 +
               </span>
             </p>
-            <p>Happy Customers</p>
+            <p>Zadovoljnih Mušterija</p>
           </div>
           <div className={styles.numberIconPBox}>
             <p style={{ color: "white", fontSize: "35px" }}>
@@ -42,7 +42,7 @@ const Header = () => {
                 +
               </span>
             </p>
-            <p>Awards Winnings</p>
+            <p>Dodeljenih Nagrada</p>
           </div>
         </div>
       </div>

@@ -51,13 +51,16 @@ const Nav = () => {
       </div>
       <div className={styles.menuBox}>
       <Link style={{ textDecoration: "none" }} to={"/"}>
-          <h2>Home</h2>
+          <h2>Početna</h2>
         </Link>
         <Link style={{ textDecoration: "none" }} to={"/properties"}>
-          <h2>Properties</h2>
+          <h2>Nekretnine</h2>
         </Link>
         <Link style={{ textDecoration: "none" }} to={"/contact"}>
-          <h2>Contact</h2>
+          <h2>Omiljene</h2>
+        </Link>
+        <Link style={{ textDecoration: "none" }} to={"/contact"}>
+          <h2>Kontakt</h2>
         </Link>
         {user ? <h2 className={styles.username}>{user.username}</h2> : ""}
           <Link to={"/auth"}>

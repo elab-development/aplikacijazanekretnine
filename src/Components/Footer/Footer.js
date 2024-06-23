@@ -10,23 +10,23 @@ const Footer = () => {
           <Link to={"/"}>
             <img className={styles.logo} src={logo} alt=""></img>
           </Link>
-          <p>
-            Our vision is to make all people the best place to live for them.
-          </p>
+          <p>Naša vizija je da ljudima pronađemo mesto za život iz snova</p>
         </div>
         <div className={styles.boxR}>
-          <h1>Information</h1>
-          <p>145 New York, FL 5467, USA</p>
+          <h1>Informacije</h1>
+          <p>Resavska 98, Palilua 11000</p>
           <div className={styles.linkBox}>
           <Link style={{ textDecoration: "none" }} to={"/"}>
-              <h3>Home</h3>
+              <h3>Početna</h3>
             </Link>
             <Link style={{ textDecoration: "none" }} to={"/properties"}>
-              <h3>Properties</h3>
+              <h3>Nekretnine</h3>
             </Link>
-
+            <Link style={{ textDecoration: "none" }} to={"/favorites"}>
+              <h3>Omiljene</h3>
+            </Link>
             <Link style={{ textDecoration: "none" }} to={"/contact"}>
-              <h3>Contact</h3>
+              <h3>Kontakt</h3>
             </Link>
           </div>
         </div>

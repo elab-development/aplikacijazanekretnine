@@ -16,36 +16,36 @@ const Description = () => {
       <FramedImage img={valueImg} />
       <div className={styles.boxR}>
         <div>
-          <h2>Our Value</h2>
-          <h1>Value We Give to You</h1>
+          <h2>Šta nudimo</h2>
+          <h1>Nudimo Vam</h1>
           <p>
-            We always ready to help by providijng the best services for you. We
-            beleive a good blace to live can make your life better
+            Uvek smo spremni da pomognemo pružanjem najboljih usluga za Vas.
+            Verujemo da dobro mesto za život, čini život lepšim.
           </p>
         </div>
 
         <TextPopup
           leftIcon={faCheckCircle}
           icon={faChevronDown}
-          title={"Best interest rates on the market"}
+          title={"Najbolje kamate na tržištu"}
           p={
-            "Exercitation in fugiat est ut ad ea cupidatat ut in cupidatat occaecat ut occaecat consequat est minim minim esse tempor laborum consequat esse adipisicing eu reprehenderit enim. "
+            "Ekskluzivne kamatne stope koje su trenutno najbolje na tržištu, pružajući vam maksimalnu uštedu i profitabilnost. "
           }
         />
         <TextPopup
           leftIcon={faXmarkCircle}
           icon={faChevronDown}
-          title={"Prevent unstable prices"}
+          title={"Sprečite nestabilne cene"}
           p={
-            " Exercitation in fugiat est ut ad ea cupidatat ut in cupidatat occaecat ut occaecat consequat est minim minim esse tempor laborum consequat esse adipisicing eu reprehenderit enim."
+            " Sprečite nestabilne cene pravovremenim planiranjem i strategijskim pristupom."
           }
         />
         <TextPopup
           leftIcon={faChartSimple}
           icon={faChevronDown}
-          title={"Best price on the market"}
+          title={"Najpovoljnije cene na tržištu"}
           p={
-            " Exercitation in fugiat est ut ad ea cupidatat ut in cupidatat occaecat ut occaecat consequat est minim minim esse tempor laborum consequat esse adipisicing eu reprehenderit enim."
+            " Najpovoljnije cene na tržištu uz naše specijalne ponude i usluge garantuju stabilnost i sigurnost vašeg ulaganja."
           }
         />
       </div>
