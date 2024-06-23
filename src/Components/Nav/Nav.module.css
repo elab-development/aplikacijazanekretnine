@@ -42,6 +42,7 @@
 
 .logoBox img {
   cursor: pointer;
+  height: 80px;
 }
 .username {
   font-style: italic;

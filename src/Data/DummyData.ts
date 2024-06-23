@@ -3,7 +3,7 @@
       export const listData: Property[] = [
       {
       id: 1,
-      title: "A Great Apartment Next to the Beach!",
+      title: "Sjajan stan pored plaže!",
       img: "https://images.pexels.com/photos/1918291/pexels-photo-1918291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       bedroom: 2,
       bathroom: 1,
@@ -20,7 +20,7 @@
     },
     {
       id: 2,
-      title: "An Awesome Apartment Near the Park!",
+      title: "Odličan stan blizu parka!",
       img: "https://images.pexels.com/photos/1428348/pexels-photo-1428348.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       bedroom: 3,
       bathroom: 2,
@@ -37,7 +37,7 @@
     },
     {
       id: 3,
-      title: "A New Apartment in the City!",
+      title: "Novi stan u centru grada!",
       img: "https://images.pexels.com/photos/2062426/pexels-photo-2062426.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       bedroom: 1,
       bathroom: 1,
@@ -54,7 +54,7 @@
     },
     {
       id: 4,
-      title: "Great Location! Great Price! Great Apartment!",
+      title: "Odlična lokacija! Sjajna cena! Sjajan stan!",
       img: "https://images.pexels.com/photos/2467285/pexels-photo-2467285.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       bedroom: 2,
       bathroom: 1,
@@ -71,7 +71,7 @@
     },
     {
       id: 5,
-      title: "Luxury Apartment with Sea View",
+      title: "Luksuzni stan sa pogledom na more",
       img: "https://images.pexels.com/photos/276625/pexels-photo-276625.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       bedroom: 3,
       bathroom: 2,
@@ -89,7 +89,7 @@
     },
     {
       id: 6,
-      title: "Modern Apartment in the City Center",
+      title: "Moderan stan u centru grada",
       img: "https://images.pexels.com/photos/271816/pexels-photo-271816.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       bedroom: 2,
       bathroom: 2,
@@ -106,7 +106,7 @@
     },
     {
       id: 7,
-      title: "Cozy Apartment with Garden View",
+      title: "Udoban stan sa pogledom na vrt",
       img: "https://images.pexels.com/photos/2029667/pexels-photo-2029667.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       bedroom: 1,
       bathroom: 1,
@@ -123,7 +123,7 @@
     },
     {
       id: 8,
-      title: "Spacious Apartment in a Quiet Neighborhood",
+      title: "Prostran stan u mirnom kraju",
       img: "https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       bedroom: 3,
       bathroom: 2,
@@ -139,7 +139,7 @@
     },
     {
       id: 9,
-      title: "Charming Apartment with Balcony",
+      title: "Šarmantan stan sa balkonom",
       img: "https://images.pexels.com/photos/210604/pexels-photo-210604.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       bedroom: 2,
       bathroom: 1,
@@ -156,7 +156,7 @@
     },
     {
       id: 10,
-      title: "Elegant Apartment in Historical Building",
+      title: "Elegantan stan u istorijskoj zgradi",
       img: "https://images.pexels.com/photos/279607/pexels-photo-279607.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       bedroom: 3,
       bathroom: 2,
@@ -173,7 +173,7 @@
     },
     {
       id: 11,
-      title: "Luxurious Penthouse with Stunning Views",
+      title: "Luksuzni penthouse sa prelepim pogledom",
       img: "https://images.pexels.com/photos/3584997/pexels-photo-3584997.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       bedroom: 4,
       bathroom: 3,
@@ -190,7 +190,7 @@
     },
     {
       id: 12,
-      title: "Modern Loft in Downtown",
+      title: "Moderan loft u centru grada",
       img: "https://images.pexels.com/photos/3889864/pexels-photo-3889864.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       bedroom: 1,
       bathroom: 1,
@@ -208,7 +208,7 @@
   
     {
       id: 14,
-      title: "Cozy Studio in the Heart of the City",
+      title: "Udoban studio u srcu grada",
       img: "https://images.pexels.com/photos/275484/pexels-photo-275484.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       bedroom: 1,
       bathroom: 1,
@@ -225,25 +225,25 @@
     },
     {
       id: 15,
-      title: "Charming Cottage in the Suburbs",
+      title: "Šarmantna vikendica u predgrađu",
       img: "https://images.pexels.com/photos/374870/pexels-photo-374870.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       bedroom: 3,
       bathroom: 2,
-      price: 2500,
+      price: 1500,
       address: {
-        street: "34 Suburban Road",
-        city: "Edinburgh",
-        state: "Edinburgh",
-        zip: "89012",
+        street: "78 Suburban Lane",
+      city: "Leeds",
+      state: "Leeds",
+      zip: "56789",
       },
-      city: "Edinburgh",
-      latitude: 55.9531,
-      longitude: -3.1925,
+      city: "Leeds",
+    latitude: 53.7997,
+    longitude: -1.5492,
     },
   
     {
       id: 18,
-      title: "Urban Apartment with City Views",
+      title: "Urban stan sa pogledom na grad",
       img: "https://images.pexels.com/photos/3567082/pexels-photo-3567082.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       bedroom: 2,
       bathroom: 2,
@@ -260,7 +260,7 @@
     },
     {
       id: 19,
-      title: "Beachside Villa",
+      title: "Vila pored plaže",
       img: "https://images.pexels.com/photos/2360665/pexels-photo-2360665.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       bedroom: 4,
       bathroom: 3,
@@ -277,7 +277,7 @@
     },
     {
       id: 20,
-      title: "Cozy Loft with Modern Amenities",
+      title: "Udoban loft sa modernim sadržajima",
       img: "https://images.pexels.com/photos/210617/pexels-photo-210617.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       bedroom: 1,
       bathroom: 1,
@@ -294,7 +294,7 @@
     },
     {
       id: 21,
-      title: "Spacious Family Home",
+      title: "Prostrana porodična kuća",
       img: "https://images.pexels.com/photos/259950/pexels-photo-259950.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       bedroom: 5,
       bathroom: 3,
@@ -311,7 +311,7 @@
     },
     {
       id: 22,
-      title: "Modern Apartment with Gym",
+      title: "Moderan stan sa teretanom",
       img: "https://images.pexels.com/photos/1571456/pexels-photo-1571456.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       bedroom: 2,
       bathroom: 2,
@@ -328,7 +328,7 @@
     },
     {
       id: 23,
-      title: "Luxury Penthouse in City Center",
+      title: "Luksuzni penthouse u centru grada",
       img: "https://images.pexels.com/photos/323705/pexels-photo-323705.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       bedroom: 3,
       bathroom: 3,

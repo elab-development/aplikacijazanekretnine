@@ -11,6 +11,7 @@ import { Property } from "../../../Utils/Property";
 interface PropertiesListState {
   searchQuery: string;
   filteredData: Property[];
+  displayedCount: number;
 }
 
 class PropertiesList extends Component<{}, PropertiesListState> {
@@ -19,17 +20,43 @@ class PropertiesList extends Component<{}, PropertiesListState> {
     this.state = {
       searchQuery: "",
       filteredData: listData,
+      displayedCount: 10, // Initial number of items to display
     };
   }
 
   handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const searchQuery = e.target.value;
     const filteredData = PropertyHelper.filterProperties(listData, searchQuery);
-    this.setState({ searchQuery, filteredData });
+    this.setState({ searchQuery, filteredData, displayedCount: 10 });
+  };
+
+  handleLoadMore = () => {
+    this.setState((prevState) => ({
+      displayedCount: prevState.displayedCount + 10, // Increase the displayed count by 10
+    }));
+  };
+
+  handleLoadLess = () => {
+    this.setState((prevState) => ({
+      displayedCount: Math.max(prevState.displayedCount - 10, 10), // Decrease the displayed count by 10 but not less than the initial count
+    }));
+  };
+
+  handleLoadMore = () => {
+    this.setState((prevState) => ({
+      displayedCount: prevState.displayedCount + 10, // Increase the displayed count by 10
+    }));
+  };
+
+  handleLoadLess = () => {
+    this.setState((prevState) => ({
+      displayedCount: Math.max(prevState.displayedCount - 10, 10), // Decrease the displayed count by 10 but not less than the initial count
+    }));
   };
 
   render() {
-    const { searchQuery, filteredData } = this.state;
+    const { searchQuery, filteredData, displayedCount } = this.state;
+    const dataToDisplay = filteredData.slice(0, displayedCount);
 
     return (
       <div className="container">
@@ -46,9 +73,21 @@ class PropertiesList extends Component<{}, PropertiesListState> {
         </div>
 
         <div className="propertiesList">
-          {filteredData.map((item) => (
+          {dataToDisplay.map((item) => (
             <Card key={item.id} item={item} />
           ))}
+        </div>
+        <div className="loadButtons">
+          {displayedCount < filteredData.length && (
+            <button className="load-more-btn" onClick={this.handleLoadMore}>
+              Load More
+            </button>
+          )}
+          {displayedCount > 10 && (
+            <button className="load-more-btn" onClick={this.handleLoadLess}>
+              Load Less
+            </button>
+          )}
         </div>
       </div>
     );
