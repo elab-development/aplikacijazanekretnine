@@ -7,10 +7,10 @@ import Properties from "./Components/Pages/Properties/Properties";
 import Footer from "./Components/Footer/Footer";
 import Contact from "./Components/Pages/Contact/Contact";
 import Auth from "./Auth/Auth";
+import Favorites from "./Components/Pages/Favorites/Favorites";
 import { useDispatch, useSelector } from "react-redux";
 import { auth } from "./Firebase";
 import { login } from "./Components/Features/userSlice";
-import Favorites from "./Components/Pages/Favorites/Favorites";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
