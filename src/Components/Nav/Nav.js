@@ -59,6 +59,7 @@ const Nav = () => {
         <Link style={{ textDecoration: "none" }} to={"/contact"}>
           <h2>Contact</h2>
         </Link>
+        {user ? <h2 className={styles.username}>{user.username}</h2> : ""}
           <Link to={"/auth"}>
            <button onClick={handleLogout}>{user ? "Logout" : "Login"}</button>
           </Link>

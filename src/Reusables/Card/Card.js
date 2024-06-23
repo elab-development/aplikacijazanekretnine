@@ -3,6 +3,7 @@ import styles from "./Card.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import { useDispatch, useSelector } from "react-redux";
+import { toast } from "react-toastify";
 import {
   addToFavorites,
   removeFromFavorites,
@@ -19,8 +20,10 @@ const Card = ({ item }) => {
   const handleFavoriteClick = () => {
     if (isFavorite) {
       dispatch(removeFromFavorites(item));
+      toast.error(`${item.title} removed from favorites!`);
     } else {
       dispatch(addToFavorites(item));
+      toast.success(`${item.title} added to favorites!`);
     }
   };
   return (

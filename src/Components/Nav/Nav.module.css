@@ -7,6 +7,7 @@
   justify-content: space-between;
   background-color: transparent;
   transition: background-color 0.3s ease;
+  z-index: 999;
 }
 
 .containerScrolling {
@@ -41,4 +42,7 @@
 
 .logoBox img {
   cursor: pointer;
+}
+.username {
+  font-style: italic;
 }
