@@ -16,7 +16,7 @@ class Favorites extends Component<FavoritesProps> {
 
     return (
       <div className="container">
-        <h2>Your Favorite Properties</h2>
+        <h2>Vase omiljene nekretnine</h2>
         <div className="cardsContainer">
           {favorites.length > 0 ? (
             favorites.map((item) => (
@@ -30,7 +30,7 @@ class Favorites extends Component<FavoritesProps> {
               />
             ))
           ) : (
-            <p>You have no favorite properties.</p>
+            <p>Jos uvek nemate omiljenih nekretnina.</p>
           )}
         </div>
       </div>
