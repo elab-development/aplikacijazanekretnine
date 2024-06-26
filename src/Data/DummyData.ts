@@ -121,22 +121,7 @@
       latitude: 52.4862,
       longitude: -1.8904,
     },
-    {
-      id: 8,
-      title: "Prostran stan u mirnom kraju",
-      img: "https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      bedroom: 3,
-      bathroom: 2,
-      price: 1600,
-      address: {
-        street: "8765 Maple Street",
-        city: "Edinburgh",
-        state: "Edinburgh",
-        zip: "89012",
-      },
-      latitude: 55.9533,
-      longitude: -3.1883,
-    },
+    
     {
       id: 9,
       title: "Šarmantan stan sa balkonom",
