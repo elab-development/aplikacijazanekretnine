@@ -14,6 +14,7 @@ import { login } from "./Components/Features/userSlice";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Bookings from "./Components/Pages/Bookings/Bookings";
+import Property from "./Components/Pages/Properties/Property";
 function App() {
   const [isLoading, setIsLoading] = useState(true);
   const location = useLocation();
@@ -45,7 +46,10 @@ function App() {
       <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/properties" element={<Properties />} />
+        <Route path="/properties">
+          <Route index element={<Properties />} />
+          <Route path=":propertyId" element={<Property />} />
+        </Route>
         <Route path="/bookings" element={<Bookings />} />
         <Route path="/favorites" element={<Favorites />} />
         <Route path="/contact" element={<Contact />} />

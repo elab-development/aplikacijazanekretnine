@@ -48,3 +48,30 @@
     font-size: 15px;
     cursor: pointer;
   }
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 100px 200px;
+    gap: 25px;
+  }
+  
+  .container img {
+    border-radius: 10px;
+  }
+  
+  .container h2 {
+    color: #1f3e72;
+  }
+  
+  .container p {
+    color: #2c4dcd;
+    font-weight: bold;
+    font-size: 22px;
+  }
+  
+  .titlePriceBox {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
