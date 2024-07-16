@@ -13,7 +13,7 @@ import { auth } from "./Firebase";
 import { login } from "./Components/Features/userSlice";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-
+import Bookings from "./Components/Pages/Bookings/Bookings";
 function App() {
   const [isLoading, setIsLoading] = useState(true);
   const location = useLocation();
@@ -46,6 +46,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/properties" element={<Properties />} />
+        <Route path="/bookings" element={<Bookings />} />
         <Route path="/favorites" element={<Favorites />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/auth" element={<Auth />} />
