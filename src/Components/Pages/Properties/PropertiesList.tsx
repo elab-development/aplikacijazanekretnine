@@ -8,19 +8,26 @@ import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import PropertyHelper from "../../../Utils/PropertyHelper";
 import { Property } from "../../../Utils/Property";
 
+interface PropertiesListProps {
+  setAuthModule: (module: string) => void;
+}
+
 interface PropertiesListState {
   searchQuery: string;
   filteredData: Property[];
   displayedCount: number;
 }
 
-class PropertiesList extends Component<{}, PropertiesListState> {
-  constructor(props: {}) {
+  class PropertiesList extends Component<
+  PropertiesListProps,
+  PropertiesListState
+  > {
+constructor(props: PropertiesListProps) {
     super(props);
     this.state = {
       searchQuery: "",
       filteredData: listData,
-      displayedCount: 10, // Initial number of items to display
+      displayedCount: 10,
     };
   }
 
@@ -32,7 +39,7 @@ class PropertiesList extends Component<{}, PropertiesListState> {
 
   handleLoadMore = () => {
     this.setState((prevState) => ({
-      displayedCount: prevState.displayedCount + 10, // Increase the displayed count by 10
+      displayedCount: Math.max(prevState.displayedCount - 10, 10),
     }));
   };
 
@@ -56,6 +63,7 @@ class PropertiesList extends Component<{}, PropertiesListState> {
 
   render() {
     const { searchQuery, filteredData, displayedCount } = this.state;
+    const { setAuthModule } = this.props;
     const dataToDisplay = filteredData.slice(0, displayedCount);
 
     return (
@@ -74,7 +82,7 @@ class PropertiesList extends Component<{}, PropertiesListState> {
 
         <div className="propertiesList">
           {dataToDisplay.map((item) => (
-            <Card key={item.id} item={item} />
+            <Card key={item.id} item={item} setAuthModule={setAuthModule} />
           ))}
         </div>
         <div className="loadButtons">

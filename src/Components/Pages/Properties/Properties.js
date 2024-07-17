@@ -9,40 +9,37 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useDispatch, useSelector } from "react-redux";
 import { addToBookings, removeFromBookings } from "../../Features/userSlice";
-const Property = () => {
+const Property = ({ setAuthModule }) => {
   const location = useLocation();
   const dispatch = useDispatch();
   const bookings = useSelector((state) => state.user.bookings);
-  const navigate = useNavigate();
+  const user = useSelector((state) => state.user.user);
   const { item } = location.state || {};
   const [showDatePicker, setShowDatePicker] = useState(false);
   const [startDate, setStartDate] = useState(null);
   const [endDate, setEndDate] = useState(null);
   const today = new Date();
 
-  console.log(bookings);
+  
   if (!item) {
     return <div>Loading...</div>;
   }
   const isBooked = bookings.some((bookingItem) => bookingItem.id === item.id);
 
-  // const handleBookingClicked = (e) => {
-  //   e.stopPropagation();
 
-  //   if (isFavorite) {
-  //     dispatch(removeFromBookings(item));
-  //     toast.error(`${item.title} uklonjeno iz Rezervacija!`);
-  //   } else {
-  //     dispatch(addToBookings(item));
-  //     toast.success(`${item.title} dodato u Rezervacije!`);
-  //   }
-  // };
   const handleRemoveBooking = () => {
     dispatch(removeFromBookings(item));
     setEndDate(false);
     setStartDate(false);
     navigate("/bookings");
   };
+  const handleBookingClick = () => {
+    if (user) {
+      setShowDatePicker(true);
+    } else {
+      setAuthModule(true);
+    }
+  }
   const handleDateSelection = (dates) => {
     const [start, end] = dates;
     setStartDate(start);
@@ -80,13 +77,7 @@ const Property = () => {
           </div>
         </div>
         <p>{item.description}</p>
-        <button
-          onClick={() => {
-            setShowDatePicker(true);
-          }}
-        >
-          Rezervisi
-        </button>
+        <button onClick={handleBookingClick}>Rezervisi</button>
         {showDatePicker && (
         <div className={styles.modalBackdrop}>
           <div className={styles.modalContent}>

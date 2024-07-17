@@ -7,6 +7,12 @@
     height: fit-content;
   }
   
+.container img {
+  border-radius: 10px;
+  height: 620px;
+  object-fit: cover;
+}
+  
   .icon {
     color: #2c4dcd;
     height: 40px;
@@ -63,7 +69,7 @@
   
   
   .lBox {
-    width: 50%;
+    width: 60%;
   }
   
   .lBox p {

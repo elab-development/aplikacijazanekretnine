@@ -8,16 +8,17 @@ import Footer from "./Components/Footer/Footer";
 import Contact from "./Components/Pages/Contact/Contact";
 import Auth from "./Auth/Auth";
 import Favorites from "./Components/Pages/Favorites/Favorites";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { auth } from "./Firebase";
 import { login } from "./Components/Features/userSlice";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Bookings from "./Components/Pages/Bookings/Bookings";
 import Property from "./Components/Pages/Properties/Property";
+import AuthModule from "./Reusables/AuthModule/AuthModule";
 function App() {
   const [isLoading, setIsLoading] = useState(true);
-  const location = useLocation();
+  const [authModule, setAuthModule] = useState(false);
   // const user = useSelector((store) => store.user.user);
   const dispatch = useDispatch();
   useEffect(() => {
@@ -46,8 +47,11 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/properties">
-          <Route index element={<Properties />} />
-          <Route path=":propertyId" element={<Property />} />
+        <Route index element={<Properties setAuthModule={setAuthModule} />} />
+          <Route
+            path=":propertyId"
+            element={<Property setAuthModule={setAuthModule} />}
+          />
         </Route>
         <Route path="/bookings" element={<Bookings />} />
         <Route path="/favorites" element={<Favorites />} />
@@ -56,6 +60,7 @@ function App() {
       </Routes>
       <ToastContainer position="bottom-left" />
       <Footer />
+      {authModule && <AuthModule setAuthModule={setAuthModule} />}
     </div>
   );
 }

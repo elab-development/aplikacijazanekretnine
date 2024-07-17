@@ -8,12 +8,12 @@ import { Property } from "../../../Utils/Property";
 
 interface FavoritesProps {
   favorites: Property[];
+  setAuthModule: (module: string) => void;
 }
 
 class Favorites extends Component<FavoritesProps> {
   render() {
-    const { favorites } = this.props;
-
+    const { favorites, setAuthModule } = this.props;
     return (
       <div className="container">
         <h2>Vase omiljene nekretnine</h2>
@@ -27,6 +27,7 @@ class Favorites extends Component<FavoritesProps> {
                   formattedPrice: PropertyHelper.formatPrice(item.price),
                   formattedAddress: PropertyHelper.formatAddress(item.address),
                 }}
+                setAuthModule={setAuthModule}
               />
             ))
           ) : (
