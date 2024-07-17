@@ -15,10 +15,10 @@ const Property = () => {
     <div className={styles.container}>
       <h1>Property Details</h1>
       <img src={item.img} alt="Property" />
-      <div>
+      <div className={styles.lBox}>
         <div className={styles.titlePriceBox}>
           <h2>{item.title}</h2>
-          <p>{item.price} $</p>
+          <span style={{ color: "#2c4dcd" }}>{item.price} $</span>
         </div>
         <div className={styles.roomsBox}>
           <div className={styles.iconTextBox}>
@@ -36,6 +36,8 @@ const Property = () => {
             <h6>{item.bathroom} Sobe/a</h6>
           </div>
         </div>
+        <p>{item.description}</p>
+        <button>Rezerviši</button>
         <div className={styles.roomsBox}>
           <div className={styles.iconTextBox}>
             <FontAwesomeIcon className={styles.icon} icon={faShower} />
