@@ -75,3 +75,23 @@
     align-items: center;
     gap: 50px;
   }
+  .roomsBox {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-left: 20px;
+  }
+  
+  .roomsBox h6 {
+    color: #1f3e72;
+  }
+  
+  .iconTextBox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .iconTextBox {
+    color: #1f3e72;
+  }
