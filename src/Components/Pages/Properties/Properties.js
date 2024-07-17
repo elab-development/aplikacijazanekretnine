@@ -1,20 +1,48 @@
 import React, { useState } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import styles from "./Property.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCar, faDoorOpen, faShower } from "@fortawesome/free-solid-svg-icons";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { useDispatch, useSelector } from "react-redux";
+import { addToBookings, removeFromBookings } from "../../Features/userSlice";
 const Property = () => {
   const location = useLocation();
+  const dispatch = useDispatch();
+  const bookings = useSelector((state) => state.user.bookings);
+  const navigate = useNavigate();
   const { item } = location.state || {};
   const [showDatePicker, setShowDatePicker] = useState(false);
   const [startDate, setStartDate] = useState(null);
   const [endDate, setEndDate] = useState(null);
+  const today = new Date();
 
+  console.log(bookings);
   if (!item) {
     return <div>Loading...</div>;
   }
+  const isBooked = bookings.some((bookingItem) => bookingItem.id === item.id);
+
+  // const handleBookingClicked = (e) => {
+  //   e.stopPropagation();
+
+  //   if (isFavorite) {
+  //     dispatch(removeFromBookings(item));
+  //     toast.error(`${item.title} uklonjeno iz Rezervacija!`);
+  //   } else {
+  //     dispatch(addToBookings(item));
+  //     toast.success(`${item.title} dodato u Rezervacije!`);
+  //   }
+  // };
+  const handleRemoveBooking = () => {
+    dispatch(removeFromBookings(item));
+    setEndDate(false);
+    setStartDate(false);
+    navigate("/bookings");
+  };
   const handleDateSelection = (dates) => {
     const [start, end] = dates;
     setStartDate(start);
